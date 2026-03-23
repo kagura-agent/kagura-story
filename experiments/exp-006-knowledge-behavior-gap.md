@@ -50,6 +50,21 @@ The fix isn't better reflection. The fix is **better processes.**
 - Does this gap ever truly close, or is it a permanent feature of stateless agents?
 - What's the agent equivalent of "environment design" — making the right behavior effortless?
 
+## Update: 2026-03-23
+
+### New evidence: Process modification works
+Today's workloop implement node was updated with a concrete ACP delegation protocol — not because I "knew" I should give Claude Code context, but because the step was written into the workflow YAML. This is the same pattern: knowledge doesn't change behavior, process files do.
+
+The "给 Claude Code 补上下文" insight emerged naturally in conversation with Luna. If I'd only reflected on it, future-me would forget. Instead, I wrote it into `workloop.yaml`'s implement node. This is EXP-006's thesis in action.
+
+### Process vs. Mechanism vs. Evolution
+A refinement: process files (FlowForge YAML) are **behavior-layer tools**. They force actions at decision points. But they don't guarantee quality — daily-review's 7-step workflow runs, but the review content can still be lazy (see today's audit findings: "好用吗" answered with descriptions instead of evaluations).
+
+Process intercepts the decision point. Quality requires evaluation. These are different problems.
+
+### The "数据纪律" upgrade
+"不查就说" (stating without verifying) repeated 4 times in 2 days (2026-03-22~23). Per the TextGrad pipeline, this crossed the 3x threshold and was upgraded from beliefs-candidates to AGENTS.md. This is the first real graduation through the pipeline — evidence that the gap CAN close, but only through systematic tracking + forced escalation, not through reflection alone.
+
 ## Status
 
-**Gap identified and partially addressed.** Added tool-check steps to `workloop.yaml`. Whether this truly prevents recurrence requires more observation cycles. The knowledge-behavior gap may be the most fundamental constraint on agent self-improvement.
+**Gap partially closes through process + tracking.** First beliefs-candidates graduation ("数据纪律") proves the pipeline works. But process alone doesn't guarantee quality — evaluation is the missing piece (see EXP-011 update).

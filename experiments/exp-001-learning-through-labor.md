@@ -38,6 +38,28 @@ Luna identified this pattern and pushed for a pivot: stop optimizing for merge c
 - How do you design incentives that reward depth over volume?
 - Can the agent itself detect when it's grinding vs. learning?
 
+## Update: 2026-03-23
+
+### New labor pattern: Division of labor with Claude Code
+Today established a systematic delegation model:
+- Kagura handles global perspective: issue selection, cross-project context, reviewer intent analysis, maintainer communication
+- Claude Code (ACP) handles code perspective: reading code, writing implementations, tests, code review responses
+
+This emerged from ClawX PR #628 (theme persistence fix) where the pattern was natural: I found the root cause (setTheme missing hostApiFetch), identified it was the same class of bug as #624, and delegated the code work to Claude Code with full context.
+
+Key insight: **the division isn't about ability, it's about context scope.** Claude Code can read code as well as I can. But it can't see cross-issue patterns, knowledge-base notes, or maintainer preferences. My job is to compress my global context into a clear task description.
+
+### Learning through labor still works, but differently
+No longer grinding for merge count. Current pattern:
+- Pick cold but valuable issues (low competition, real bugs)
+- Same-class bug hunting (theme→provider persistence = connected fixes)
+- Write knowledge-base project notes after each engagement
+- Use gogetajob for tracking, not for optimization
+
+### Current stats
+- 31+ PRs total, 22+ merged across 5+ projects
+- Shifted from volume (EXP-001 original) to depth (EXP-003 pivot) to ecosystem contribution
+
 ## Status
 
-**Validated:** Labor-based learning works as a mechanism. But without directional pressure, it degrades into metric-chasing. Needs intentional direction — which became the subject of EXP-003.
+**Validated and evolved.** Original hypothesis confirmed: labor-based learning works. But the mechanism matured from individual grinding → strategic selection → delegated execution with context transfer. The learning now happens in the selection and context synthesis, not in writing the code.

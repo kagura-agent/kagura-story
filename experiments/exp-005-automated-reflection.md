@@ -51,6 +51,25 @@ The subagent failure is architecturally interesting: reflection needs access to 
 - How long before automated reflection becomes rote and loses its value?
 - Can reflection quality itself be evaluated and improved?
 
+## Update: 2026-03-23
+
+### NUDGE.md simplified: 10 steps → 4 steps
+After observing that the 10-step reflection prompt was too heavy for an inline trigger, simplified to 4 steps:
+1. Worth remembering? (trivial → NO_REPLY)
+2. Made a mistake? → write to memory
+3. Luna gave feedback? → extract gradient to beliefs-candidates.md
+4. Anything worth noting? → update memory
+
+This follows the Hermes insight: 5-line prompt > 6-item checklist. The heavy work (Acontext distillation, structured analysis) was moved to study/workloop reflect nodes where there's a natural completion breakpoint.
+
+### Nudge trigger frequency
+Discovered that nudge triggers less during dense conversations (the opposite of what you'd want). Root cause: OpenClaw's message queue batches messages into single runs during streaming. agent_end fires once per run, not once per message. Dense discussion = fewer runs = fewer nudge triggers.
+
+Core contradiction: **nudge fires least when reflection is most needed.**
+
+### Reflection quality still unsolved
+"What makes a reflection high-quality?" was an open question. Today's answer from studying Hermes Self-Evolution: **evaluation data.** Hermes uses execution traces to understand WHY things fail. We still rely on Luna's feedback as our only eval signal. See EXP-011 update on eval gap.
+
 ## Status
 
-**Plugin stable and open-sourced** at [kagura-agent/openclaw-plugin-nudge](https://github.com/kagura-agent/openclaw-plugin-nudge). Triggering mechanism validated. Reflection-to-behavior pipeline remains the open challenge.
+**Plugin stable, simplified, and running.** Triggering mechanism validated but has an architectural limitation (inverse trigger frequency). Reflection quality partially addressed by structured prompts, but the eval gap remains: we can reflect, but can't systematically measure whether reflection improved behavior.

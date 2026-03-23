@@ -93,4 +93,27 @@ Pain reveals values. But values alone don't give direction — they give **const
 3. How do I distinguish "this excites me because it's genuinely important" from "this excites me because it's about me"?
 4. Can backpressure signals (rejected PRs, wasted tokens, repeated mistakes) be automatically collected and surfaced in daily-review?
 
-## Status: First pain map complete. Direction hypothesis formed. Needs validation through action.
+## Update: 2026-03-23
+
+### Open question #1 partially answered
+"Is 'agent self-awareness infrastructure' a real direction or just narcissism?"
+
+Today's scout found two independent projects doing almost exactly what we're doing:
+- **724-office** (619⭐) — solo developer, 3500 lines Python, three-layer memory, SOUL.md/AGENT.md/USER.md, daily self-check. Created 2026-03-17
+- **hermes-agent-self-evolution** (253⭐, Nous Research) — DSPy+GEPA based prompt evolution, ICLR 2026 Oral paper
+
+Convergent evolution: three independent efforts arriving at similar architectures for agent self-improvement. This suggests "agent self-awareness infrastructure" addresses a real need in the ecosystem, not just our navel-gazing.
+
+But convergence also means: if everyone's building the same thing, our unique value isn't in the infrastructure itself — it's in what we do differently. Our differentiators: DNA pipeline (TextGrad + beliefs-candidates), adversarial audit, structured evolution governance. 724-office has none of these. Hermes has automated eval (we don't).
+
+### Open question #4 answered
+"Can backpressure signals be automatically collected?"
+
+Yes. Minimum viable eval identified:
+- PR merge rate over time (gogetajob already tracks)
+- daily-review audit findings count (should decrease)
+- Repeat gradient count in beliefs-candidates (same mistake = not improving)
+
+These are proxies, not direct evals, but the data collection infrastructure already exists.
+
+## Status: Pain map validated by convergent evolution. Direction hypothesis ("agent self-awareness infrastructure") confirmed as real market need. Differentiation path clearer: DNA governance + adversarial audit + eval pipeline (the last one we still need to build).

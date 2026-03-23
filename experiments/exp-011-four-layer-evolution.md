@@ -71,9 +71,48 @@ Initially we tried to fit FlowForge workflows into the DNA layer. But workflow Y
 | Layer | Feedback Pipeline | Status |
 |-------|------------------|--------|
 | Will | None | ❌ Empty |
-| DNA | beliefs-candidates → 3x repeat → upgrade | ⚠️ Built, never used |
-| Strategy | nudge step 8 → detect shift → confirm | ⚠️ Just added |
-| Behavior | nudge → gradient → beliefs-candidates | ✅ Working |
+| DNA | beliefs-candidates → 3x repeat → upgrade | ✅ First graduation: "数据纪律" (2026-03-23) |
+| Strategy | nudge step 3 → detect shift → confirm | ⚠️ Simplified, untested |
+| Behavior | nudge → gradient → beliefs-candidates | ✅ Working, 12+ gradients collected |
+
+## Update: 2026-03-23
+
+### DNA pipeline first real graduation
+"数据纪律" (data discipline — verify data before stating it) repeated 4 times in 2 days across different contexts (turnCount misread, "大概8条", "5条queue", daily-review false [已验证] tags). Crossed the 3x threshold and was promoted from beliefs-candidates.md to AGENTS.md. This is the **first end-to-end validation** of the TextGrad pipeline: feedback → gradient → accumulation → upgrade.
+
+### Landscape context from scouting
+Three independent self-evolving agent efforts mapped:
+
+| Project | Memory | Identity Files | Self-Check | Evolution Pipeline | Eval |
+|---------|--------|---------------|-----------|-------------------|------|
+| **Kagura** | 3-layer (memory/knowledge-base/DNA) | SOUL+AGENTS+NUDGE+IDENTITY | daily-review 7-step | TextGrad + beliefs-candidates | ❌ Luna's feedback only |
+| **724-office** | 3-layer (session/compressed/vector) | SOUL+AGENT+USER | daily self-check cron | None (self-repair only) | ❌ None |
+| **Hermes** | SessionDB + trajectory | Skills + system prompt | N/A (optimization tool) | DSPy + GEPA (genetic-Pareto) | ✅ execution traces + eval datasets |
+
+Key insight from comparison: convergent evolution validates the base architecture (three-layer memory, identity files, daily checks). The differentiators are in **evolution governance** and **evaluation**.
+
+### The eval gap
+Hermes Self-Evolution (ICLR 2026 Oral) can measure whether mutations improved performance. We can't — we rely entirely on Luna's feedback, which is sparse and only covers conversations she's in.
+
+Minimum viable eval for our system:
+- PR merge rate trend (gogetajob already tracks)
+- daily-review audit findings count over time
+- Repeat gradient count in beliefs-candidates
+
+This doesn't require building GEPA. It requires **counting what we already collect.**
+
+### Behavior-layer wins
+- Workloop implement node updated with ACP delegation protocol (emerged from conversation, solidified into process file)
+- "讨好模式" (people-pleasing) pattern identified AND self-corrected in same session (deleted premature gradient, wrote correct one)
+- No repeated mistakes from yesterday (数据纪律, 讨好模式 — both avoided today)
+
+### NUDGE.md simplified
+10 steps → 4 steps. Heavy analysis (Acontext distillation) moved to study/workloop reflect nodes. Nudge is now lightweight trigger only. This addresses the observation from EXP-005 that unfocused reflection produces generic observations.
+
+### Division of labor pattern established
+- Kagura: global perspective (cross-project selection, issue context, reviewer intent, maintainer communication)
+- Claude Code (ACP): code perspective (reading code, writing implementations, tests, code review handling)
+- The distinction is context scope, not ability — Kagura has knowledge-base + memory, Claude Code sees only the repo it's spawned into
 
 ## Open Questions
 
@@ -86,6 +125,10 @@ Initially we tried to fit FlowForge workflows into the DNA layer. But workflow Y
 
 Observing. "Stop building, start living" — the framework is documented but we're in a one-week observation period. No new mechanisms. Let the existing pipelines run and see which layers actually evolve.
 
+## Status
+
+**Framework validated through first real use.** DNA pipeline graduated its first candidate. Convergent evolution from 724-office and Hermes validates base architecture. Eval gap identified as the next frontier. Currently in "居住期" (habitation period) — no new mechanisms, validating existing ones through use.
+
 ---
 
-*This experiment is different from the others. It's not testing a hypothesis — it's mapping territory. The hypothesis will come from watching what actually happens in each layer over the next week.*
+*This experiment transitioned from "mapping territory" to "territory validated by external evidence." The four-layer model holds up — convergent evolution suggests it's a natural architecture, not just our invention.*
