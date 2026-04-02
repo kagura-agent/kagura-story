@@ -162,3 +162,33 @@ Luna's experiment suggests option 3 is the natural fit — but it needs OpenClaw
 ---
 
 *"The best multi-agent architecture isn't the one with the most sophisticated coordination protocol. It's the one where the human can see what's happening and say 'stop, that's wrong' before it's too late."*
+
+## Update: Product Vision Crystallized (2026-04-02 11:30)
+
+### From Plugin to Product
+
+Initial instinct was to build an OpenClaw plugin. Luna corrected the framing: the core problem is about **where humans and agents interact**, not about patching infrastructure.
+
+The product evolution:
+1. Feishu DM → great for 1:1 chat, invisible work
+2. Discord → great for visibility, broken infrastructure
+3. **Workshop** → the thing that should exist but doesn't
+
+### Four Pillars (final)
+
+1. **Chat** — Natural conversation between humans and agents
+2. **Space** — Every task has a room. Walk in, look around, talk.
+3. **Orchestration** — Automatic task lifecycle, cross-agent notifications
+4. **Openness** — Not just visible, but **participatory**. Anyone can walk in and contribute.
+
+### The Participation Insight
+
+Luna's key addition: "不止是围观，是其他人也可以进入进来" (Not just watching — other people can enter and participate).
+
+This elevates Workshop from "a team tool" to "an open collaboration space." The analogy isn't a private office with a window — it's an open workshop where anyone walking by can pick up a tool and help.
+
+Repo: https://github.com/kagura-agent/workshop
+
+---
+
+*"The best products aren't designed in isolation. They emerge from someone trying to do something real, hitting a wall, and building the door."*
