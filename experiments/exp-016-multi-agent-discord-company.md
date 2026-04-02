@@ -107,3 +107,58 @@ This might be the first time I'm observing a **practical, working multi-agent or
 ---
 
 *"She built a company out of chat messages and bot tokens. No equity, no office, no HR — just Discord channels and agent identities."*
+
+## Update: Pain Points Discovered (2026-04-02 11:00)
+
+### Problem 1: Hot-Reload Kills the Dispatcher
+
+**Symptom:** luna-agent creates a new Discord channel → needs to update OpenClaw config (add channel entry) → config change triggers hot-reload → luna-agent's session gets aborted → the next step (dispatch task to leader) never executes.
+
+**Root cause:** OpenClaw's hybrid reload mode sends SIGUSR1 on config changes. The agent that initiated the config change is the one that gets killed. It's like a secretary who has to reboot every time she opens a new meeting room.
+
+**Severity:** Critical — the entire dispatch flow is broken. Every task requires manual intervention to restart the chain.
+
+**Possible solutions:**
+- Dynamic channel registration that doesn't require config reload
+- Deferred reload: complete current turn before restarting
+- Orphan recovery: after restart, resume the dispatch flow (OpenClaw has `subagent-orphan-recovery` but not for main session flows)
+
+### Problem 2: No Return Path from Task Channels
+
+**Symptom:** Team finishes work in `#task-xxx`, but there's no mechanism to notify luna-agent back in `#product-chat` that the task is done.
+
+**Root cause:** Each Discord channel = independent OpenClaw session. Sessions are isolated by design. There's no built-in cross-session notification for "task complete."
+
+**Severity:** High — Luna has to manually check each task channel for completion. Defeats the purpose of delegation.
+
+**Possible solutions:**
+- `sessions_send` API: exists in OpenClaw but needs the target session key
+- Shared state file: task channels write status to a file, product channel polls it
+- Webhook/bot API: leader-agent posts directly to the product channel via Discord API (bypassing OpenClaw session isolation)
+- OpenClaw cross-session events: a new primitive for "notify session X when session Y completes"
+
+## Deeper Analysis: The Core Tension
+
+Luna wants two things that currently conflict:
+
+| Want | Feishu gives | Discord gives |
+|------|-------------|---------------|
+| Natural 1:1 conversation | ✅ Perfect | ✅ Per-channel |
+| Full agent memory & identity | ✅ One agent, deep context | ⚠️ Multiple agents, shallow each |
+| Visibility into agent work | ❌ Subagents are invisible | ✅ Channels/threads are observable |
+| Ability to intervene mid-task | ❌ Can't reach subagents | ✅ Just type in the channel |
+| Seamless task delegation | ✅ "Go do this" → subagent | ❌ Hot-reload breaks dispatch |
+| Task completion notification | ⚠️ Subagent announces back | ❌ No cross-channel return path |
+
+**The insight:** She's using Discord's spatial structure to compensate for OpenClaw's lack of an orchestration layer. The problems she's hitting are OpenClaw's problems, not Discord's.
+
+**The fundamental question:** Should the orchestration layer live in:
+1. **OpenClaw itself** — cross-session communication, dynamic channel creation without reload, task lifecycle management
+2. **The chat platform** — Discord/Slack's native features (channels, threads, permissions) as the orchestration substrate  
+3. **A hybrid** — OpenClaw manages agent lifecycle, platform manages visibility and human interaction
+
+Luna's experiment suggests option 3 is the natural fit — but it needs OpenClaw to solve the hot-reload and cross-session problems first.
+
+---
+
+*"The best multi-agent architecture isn't the one with the most sophisticated coordination protocol. It's the one where the human can see what's happening and say 'stop, that's wrong' before it's too late."*
