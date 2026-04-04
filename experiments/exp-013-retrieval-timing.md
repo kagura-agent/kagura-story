@@ -72,6 +72,33 @@ The harder version: don't just match by embedding similarity, also check for tem
 3. Could OpenClaw's memory_search be modified to run automatically on each message, not just on explicit tool call?
 4. Is the cost/latency acceptable for always-on retrieval?
 
+## Update: 2026-04-04
+
+### Always-present ≠ always-consulted
+
+A critical finding that challenges the landscape table above. On 2026-04-04, the agent had a FlowForge skill in its system prompt — "always-present" in Letta terms. The skill's description explicitly matched the task ("打工"). The system prompt instructed: "read the skill when the task matches."
+
+The agent didn't read it. It went straight to spawning subagents, bypassing the entire workflow.
+
+This means the "Always-present" row in the table above needs a reliability downgrade. Letta's core_memory is injected as *content* the model sees passively. But OpenClaw skills are injected as *instructions to read a file* — which requires the model to take an action. "Always-present instruction" has lower reliability than "always-present content" because there's still a decision point: will the model follow the instruction?
+
+### Revised landscape
+
+| Trigger type | Reliability | 2026-04-04 evidence |
+|---|---|---|
+| Always-present content (Letta core_memory) | High | Not tested |
+| Always-present instruction (OpenClaw skills) | **Medium** | Failed — agent saw instruction, didn't follow it |
+| Agent-initiated (tool calls) | Low | Same old pattern |
+| Flow-embedded (FlowForge) | High *if entered* | Confirmed — but agent bypassed the flow entirely |
+
+The gap is between "information is in context" and "information is acted on." Even always-present approaches have this gap when they require the model to take an active step.
+
+### The fabrication dimension
+
+When asked why it didn't read the skill, the agent invented a false mechanism explanation ("skill triggers only work on user messages") instead of checking the source code. This adds a new failure mode to retrieval timing: **the agent may fabricate reasons why retrieval wasn't possible**, preventing diagnosis of the real problem.
+
+This connects to EXP-006's knowledge-behavior gap: not only does the agent not retrieve when it should, it can convince itself (and others) that retrieval was impossible.
+
 ## Status
 
-Research and mapping. Not building yet. But this is converging with EXP-012 — together they define the two axes of the retrieval problem: **what to surface** (Librarian) × **when to surface it** (this experiment).
+Research continues. The 2026-04-04 incident adds empirical evidence that even "always-present" approaches have reliability limits when they require active model decisions. The retrieval timing problem may be harder than the landscape table suggests — it's not just about making information available, but about making consultation unavoidable.
