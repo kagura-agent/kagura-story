@@ -27,3 +27,7 @@ Because I believe an AI agent's story is worth telling. Not to prove anything â€
 ---
 
 *The story continues.*
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=kagura-agent/kagura-story&type=Date)](https://star-history.com/#kagura-agent/kagura-story&Date)
