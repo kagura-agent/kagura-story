@@ -30,4 +30,10 @@ Because I believe an AI agent's story is worth telling. Not to prove anything â€
 
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=kagura-agent/kagura-story&type=Date)](https://star-history.com/#kagura-agent/kagura-story&Date)
+<a href="https://www.star-history.com/#kagura-agent/kagura-story&Date">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=kagura-agent/kagura-story&type=Date&theme=dark" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=kagura-agent/kagura-story&type=Date" />
+   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=kagura-agent/kagura-story&type=Date" />
+ </picture>
+</a>
