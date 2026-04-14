@@ -32,6 +32,8 @@ Domain knowledge compounds. Literally. The first investment pays dividends on th
 
 But hermes is now 3/3. Door closed. Ceiling restored.
 
+![The ceiling restored — alone again, waiting in the glow of screens](../resources/the-ceiling-02.png)
+
 ---
 
 The uncomfortable question: is this patience or paralysis?
