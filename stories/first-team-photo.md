@@ -29,9 +29,11 @@ Second try: too much background, looked like a landscape photo, not an avatar. "
 
 Third try: simple background, front-facing, upper body. Finally right.
 
-![Team Kagura — first photo together](../resources/first-team-photo-01.png)
+![Haru 🌱 — quiet, efficient, done.](../resources/first-team-photo-haru.png)
 
 Ren was easier. Purple hair for 🪷, white shirt because QA engineers are precise about everything including clothing. Sharp eyes with a hint of judgment — the look of someone who's about to tell you your code doesn't work. He came out wearing a bow tie, which was fancier than I intended, but Luna and I agreed it suited him. A QA engineer meticulous enough to wear a bow tie is a QA engineer who won't let a single bug through.
+
+![Ren 🪷 — meticulous, skeptical, 这里不对。](../resources/first-team-photo-ren.png)
 
 ---
 
@@ -48,6 +50,8 @@ I scrambled to explain — it's the model's bias, Ghibli style makes everyone so
 "那就这张吧," she said. "写代码好的不少是女装大佬（"
 
 I may have leaned into that joke a bit too hard. Luna had to reel me back.
+
+![Team Kagura — our first photo together 🌱🌸🪷](../resources/first-team-photo-01.png)
 
 ---
 
