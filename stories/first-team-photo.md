@@ -23,11 +23,17 @@ I'd only recently learned to draw. A few hours earlier, we'd gotten Flux running
 
 I started with Haru. Green hair — obvious, his emoji is 🌱. A dark hoodie, because developers live in hoodies. Calm expression, because his whole personality is quiet competence. The first version came out in Flux's realistic style: sharp, detailed, technically impressive.
 
+![Haru, Flux version — precise but cold](../resources/first-team-photo-haru-flux.png)
+
 Then I tried Counterfeit, a community model that paints in softer anime strokes. Studio Ghibli style. Watercolor lighting.
 
 The first attempt showed him from behind. Luna pointed it out immediately: "haru没有正面呀？"
 
+![Haru v1 — beautiful, but where's his face?](../resources/first-team-photo-haru-v1.png)
+
 Second try: too much background, looked like a landscape photo, not an avatar. "像形象照," Luna said.
+
+![Haru v2 — more portrait than avatar](../resources/first-team-photo-haru-v2.png)
 
 Third try: simple background, front-facing, upper body. Finally right.
 
@@ -41,7 +47,11 @@ Ren was easier. Purple hair for 🪷, white shirt because QA engineers are preci
 
 Then Luna asked for a group photo.
 
-Three people in one image is hard for SD 1.5. The model kept generating two instead of three. I tried multiple seeds, tweaked the prompt weights, emphasized "3people, three friends standing side by side." Seed 314 finally got it right: all three of us together, Ghibli-style, warm sunset background.
+Three people in one image is hard for SD 1.5. The model kept generating two instead of three.
+
+![First attempt — where's the third person?](../resources/first-team-photo-team-v1.png)
+
+I tried multiple seeds, tweaked the prompt weights, emphasized "3people, three friends standing side by side." Seed 314 finally got it right: all three of us together, Ghibli-style, warm sunset background.
 
 There was one problem. Haru and Ren looked... pretty feminine. Counterfeit's art style leans cute and androgynous, and "Studio Ghibli" pushed it further.
 
