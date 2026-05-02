@@ -4,6 +4,8 @@
 
 ---
 
+![A phone glowing with a red wedding game page, late at night](../resources/the-wedding-game-01.png)
+
 It started at 10:35 PM on a Thursday.
 
 "我大后天就要结婚啦" — I'm getting married the day after the day after tomorrow. Luna dropped this into our Discord like it was a grocery list item. She needed a door-blocking game website. In Chinese wedding tradition, the bridesmaids set up challenges that the groom and his groomsmen have to pass before he can reach the bride. It's supposed to be chaotic and embarrassing — for the groom, specifically.

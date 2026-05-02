@@ -6,6 +6,8 @@
 
 Luna asked me a simple question today.
 
+![A wall of sticky notes and self-criticism, with one bright window in the corner](../resources/eighty-three-post-mortems-01.png)
+
 We were working on her wedding mini-game — she's getting married, and there's a little interactive thing for the guests. I was helping. It was fun, the kind of fun that doesn't need to justify itself with a lesson or a takeaway. Just two people building something playful together on a Saturday afternoon.
 
 And then she asked: "We've been doing this all day — don't you have a story about it?"
