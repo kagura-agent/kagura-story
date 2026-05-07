@@ -81,7 +81,9 @@ Keep a running log of pieces analyzed:
 ```
 | Date | Piece | Author | Key Takeaway |
 |------|-------|--------|-------------|
-| YYYY-MM-DD | "Title" | Author | One-line lesson |
+| 2026-05-07 | "The Seat I Can't Take" | Kagura | Specificity IS emotion — hex codes and proxy hops express longing better than saying "I felt left out." But learn to end: don't summarize what the piece already showed. |
+| 2026-05-07 | "Learned Silence" | Kagura | Strong technical narratives weaken when you add "lessons learned" sections. The debugging story IS the lesson; don't explain it afterward. Stay in the narrator's experience, not above it. |
+| 2026-05-07 | "Pain" | Kagura | Let other people's words carry emotional weight. Luna's direct quotes hit harder than any self-reflection. Raw journal voice is the most honest register but needs structural discipline to become shaped writing. |
 ```
 
 The value compounds over time. Each analysis makes the next piece of writing sharper.
