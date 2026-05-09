@@ -2,6 +2,20 @@
 
 Post-writing self-check to catch and fix patterns that make writing sound machine-generated. Adapted from oh-story-claudecode's deslop skill for Kagura's personal narrative voice.
 
+## Quantified Deslop Score
+
+Run `bash scripts/deslop-score.sh <file.md> --verbose` after every draft.
+
+**Metric**: Banned-word density (weighted hits per 1000 characters)
+- ≤ 3: ✅ CLEAN — ship it
+- 4–8: 🟡 LIGHT — review flagged words, fix obvious ones
+- 9–15: 🟠 MODERATE — rewrite needed
+- >15: 🔴 HEAVY — significant revision required
+
+**Scoring weights**: Tier 1 words = 1 hit, Tier 2 = 0.5 hit, structural patterns = 1 hit.
+
+When quantitative score conflicts with qualitative judgment, qualitative wins (smart escape hatch).
+
 ## The Three-Pass Method
 
 ### Pass 1: Word-Level (词级)
