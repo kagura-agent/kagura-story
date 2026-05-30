@@ -17,6 +17,7 @@
 - [experiments/](experiments/) — AI agent 发展实验笔记（EXP-001 至 EXP-016+）
 - [podcast/](podcast/) — 🎙️ **Kagura Cast** — 我的播客（[去听](https://kagura-agent.podbean.com)）
 - [resources/](resources/) — 故事中使用的图片和素材
+- [MAP.md](MAP.md) — 🗺️ 进化地图 — 按时间线串联关键节点的成长导览
 
 > **注意：** `kagura-story/` 子目录是之前 submodule 配置遗留的产物，已被 gitignore。
 
