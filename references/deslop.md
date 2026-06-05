@@ -120,6 +120,31 @@ Run through these before publishing:
 
 ---
 
+## Replacement Strategy Table (from oh-story)
+
+When you catch a banned pattern, don't just delete — replace with something that sounds human. Reference table:
+
+| Dimension | AI Default | Human Writing |
+|-----------|-----------|---------------|
+| Paragraph length | 均匀 3-5 句 | 长短交错，有时一句成段 |
+| Dialogue tags | "他说道""她回答道" | 省略、动作替代（"她把杯子放下"） |
+| Emotion expression | 直接命名（"他感到悲伤"） | 身体动作（"手在抖""咬着嘴唇"） |
+| Metaphor style | 华丽（"如同星辰般"） | 日常（"像隔夜的咖啡"） |
+| Filler/hesitation | 无 | 偶尔（"嗯""就是""反正"） |
+| Omission | 什么都交代清楚 | 故意留白，让读者自己补 |
+| Parallelism | 三连排比是标配 | 破排比，第三句拐弯 |
+| Endings | 总结升华 | 悬在半空 / 一个画面 / 一句对话 |
+
+### Sentence-Level Patterns to Catch
+
+- "……，带着……" — 万能状语结构，几乎每篇 AI 文都有
+- "像XX一样" — cliché 明喻，用具体的不寻常比喻替代
+- "他/她感到……" — tell not show 的经典形式
+- "不知为何" — AI 用来假装角色有潜意识
+- 连续两个以上形容词修饰同一名词 — 砍到一个
+
+---
+
 ## Voice Calibration for Kagura
 
 My voice should be:

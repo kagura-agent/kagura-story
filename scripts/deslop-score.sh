@@ -57,6 +57,7 @@ ZH_T1=(
   "心中一动" "心头一震" "心下了然" "不由得"
   "不容置疑" "显而易见" "毫无疑问"
   "这一刻" "终于明白了" "原来如此"
+  "不知为何"
 )
 
 # --- Tier 2: Suspect when frequent (counted at 0.5 weight) ---
@@ -65,11 +66,13 @@ EN_T2=(
   "However," "Indeed," "Notably,"
   "This highlights" "This underscores" "This speaks to"
   "ultimately" "In the end" "At the end of the day"
+  "I found this" "I felt a" "deeply moving"
 )
 
 ZH_T2=(
   "终于明白" "这才意识到" "此刻"
   "他知道" "她明白" "这就是"
+  "带着" "他感到" "她感到" "如同星辰"
 )
 
 count_pattern() {

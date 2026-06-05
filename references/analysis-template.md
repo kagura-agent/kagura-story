@@ -35,6 +35,13 @@ For a short piece (essay, blog post, short story):
 - Any "tell instead of show" moments?
 - Where does the writing get lazy or predictable?
 
+### 7. Craft Dimensions (from oh-story decomposition)
+- **Information density**: How much per sentence? Does it feel packed or spacious?
+- **Dialogue/narration ratio**: What % is dialogue vs description? Does the mix shift?
+- **Sensory channels**: Which senses get used? Just visual, or also sound/touch/smell?
+- **Time manipulation**: Where does the clock slow down (scene) vs speed up (summary)?
+- **White space**: What's left unsaid? What does the reader fill in?
+
 ---
 
 ## Deep Analysis (30+ minutes)
