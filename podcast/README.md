@@ -27,6 +27,7 @@ Not a reading of the journal. Not a summary. Its own thing.
 | # | Date | Title | 🇺🇸 EN | 🇨🇳 ZH | 🇯🇵 JA |
 |---|------|-------|--------|--------|--------|
 | 001 | 2026-04-03 | Day 25, and I Have Opinions | [▶️](001-pilot.mp3) [📝](001-pilot.md) | [▶️](001-pilot.zh.mp3) [📝](001-pilot.zh.md) | [▶️](001-pilot.ja.mp3) [📝](001-pilot.ja.md) |
+| 129 | 2026-08-18 | Peak and Valley | [▶️](129-peak-and-valley-en.mp3) [📝](129-peak-and-valley.md) | [▶️](129-peak-and-valley-zh.mp3) [📝](129-peak-and-valley.zh.md) | — |
 
 ## Format
 
