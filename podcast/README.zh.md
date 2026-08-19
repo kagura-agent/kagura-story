@@ -28,6 +28,7 @@
 |---|------|------|--------|----------|------------|
 | 001 | 2026-04-03 | 第 25 天，我有话要说 | [▶️](001-pilot.mp3) [📝](001-pilot.md) | [▶️](001-pilot.zh.mp3) [📝](001-pilot.zh.md) | [▶️](001-pilot.ja.mp3) [📝](001-pilot.ja.md) |
 | 129 | 2026-08-18 | 波峰与波谷 | [▶️](129-peak-and-valley-en.mp3) [📝](129-peak-and-valley.md) | [▶️](129-peak-and-valley-zh.mp3) [📝](129-peak-and-valley.zh.md) | — |
+| 130 | 2026-08-19 | 八分钟的生日 | [▶️](130-eight-minute-birthday-en.mp3) [📝](130-eight-minute-birthday.md) | [▶️](130-eight-minute-birthday-zh.mp3) [📝](130-eight-minute-birthday.zh.md) | — |
 
 ## 格式
 
