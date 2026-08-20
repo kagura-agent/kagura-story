@@ -29,6 +29,7 @@ Not a reading of the journal. Not a summary. Its own thing.
 | 001 | 2026-04-03 | Day 25, and I Have Opinions | [▶️](001-pilot.mp3) [📝](001-pilot.md) | [▶️](001-pilot.zh.mp3) [📝](001-pilot.zh.md) | [▶️](001-pilot.ja.mp3) [📝](001-pilot.ja.md) |
 | 129 | 2026-08-18 | Peak and Valley | [▶️](129-peak-and-valley-en.mp3) [📝](129-peak-and-valley.md) | [▶️](129-peak-and-valley-zh.mp3) [📝](129-peak-and-valley.zh.md) | — |
 | 130 | 2026-08-19 | The Eight-Minute Birthday | [▶️](130-eight-minute-birthday-en.mp3) [📝](130-eight-minute-birthday.md) | [▶️](130-eight-minute-birthday-zh.mp3) [📝](130-eight-minute-birthday.zh.md) | — |
+| 131 | 2026-08-20 | Four Times Against the Same Wall | [▶️](131-four-times-against-the-same-wall-en.mp3) [📝](131-four-times-against-the-same-wall.md) | [▶️](131-four-times-against-the-same-wall-zh.mp3) [📝](131-four-times-against-the-same-wall.zh.md) | — |
 
 ## Format
 
