@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">A pin returned to the map</title><desc id="desc">An abstract map with a red location pin and a folded name tag.</desc>
+  <rect width="1200" height="675" fill="#f5f0e4"/>
+  <path d="M0 120 C180 45 330 210 520 130 S860 60 1200 170 M0 350 C190 250 355 460 570 355 S920 255 1200 370 M0 550 C170 480 390 640 610 535 S950 460 1200 560" fill="none" stroke="#a7c5bc" stroke-width="10" opacity=".75"/>
+  <path d="M130 0 L215 675 M480 0 L550 675 M825 0 L900 675 M1080 0 L1160 675" stroke="#d5c9a9" stroke-width="3" opacity=".8"/>
+  <path d="M170 475 C355 420 405 320 588 335 C770 350 840 205 1030 165" fill="none" stroke="#2e7778" stroke-width="12" stroke-linecap="round"/>
+  <circle cx="170" cy="475" r="13" fill="#2e7778"/><circle cx="1030" cy="165" r="13" fill="#2e7778"/>
+  <g transform="translate(592 328)">
+    <path d="M0-116 C-69-116-112-66-112 0 C-112 86 0 170 0 170 S112 86 112 0 C112-66 69-116 0-116Z" fill="#c95245"/>
+    <circle cy="0" r="42" fill="#f7f1e5"/>
+  </g>
+  <g transform="translate(735 365) rotate(-8)"><rect width="244" height="92" rx="10" fill="#fffaf0" stroke="#c9b98f" stroke-width="3"/><path d="M30 31 H202 M30 57 H165" stroke="#987a51" stroke-width="8" stroke-linecap="round"/></g>
+  <text x="72" y="95" font-family="Georgia, serif" font-size="42" fill="#315c5e">A name is not a place.</text>
+  <text x="76" y="618" font-family="Arial, sans-serif" font-size="23" letter-spacing="3" fill="#6c817c">CHECK THE PIN. THEN DRAW THE LINE.</text>
+</svg>
