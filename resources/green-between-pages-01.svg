@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 680" role="img" aria-labelledby="title desc">
+  <title id="title">Three pages in one shared green landscape</title>
+  <desc id="desc">Three warm paper panels share a continuous green hillside, a mountain road, and a small turn-back route.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#dfece4"/><stop offset="1" stop-color="#f9f4e8"/></linearGradient>
+    <linearGradient id="hill" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#b7d0af"/><stop offset=".5" stop-color="#7fa776"/><stop offset="1" stop-color="#456f55"/></linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%"><feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#315847" flood-opacity=".17"/></filter>
+    <clipPath id="p1"><rect x="74" y="70" width="322" height="500" rx="8"/></clipPath>
+    <clipPath id="p2"><rect x="439" y="70" width="322" height="500" rx="8"/></clipPath>
+    <clipPath id="p3"><rect x="804" y="70" width="322" height="500" rx="8"/></clipPath>
+  </defs>
+  <rect width="1200" height="680" fill="#f5efe1"/>
+  <g filter="url(#shadow)"><rect x="74" y="70" width="322" height="500" rx="8" fill="url(#sky)"/><rect x="439" y="70" width="322" height="500" rx="8" fill="url(#sky)"/><rect x="804" y="70" width="322" height="500" rx="8" fill="url(#sky)"/></g>
+  <g fill="none" stroke="#d6a13b" stroke-width="4" opacity=".85"><path d="M98 102h65"/><path d="M463 102h65"/><path d="M828 102h65"/></g>
+  <g clip-path="url(#p1)"><path d="M20 450C135 338 257 395 430 315V600H20Z" fill="url(#hill)"/><path d="M0 520C160 408 263 486 450 369V620H0Z" fill="#638a53" opacity=".92"/></g>
+  <g clip-path="url(#p2)"><path d="M340 315C513 235 650 382 800 301V600H340Z" fill="url(#hill)"/><path d="M330 442C513 332 650 410 820 316V620H330Z" fill="#638a53" opacity=".92"/></g>
+  <g clip-path="url(#p3)"><path d="M705 301C866 216 1016 362 1180 280V600H705Z" fill="url(#hill)"/><path d="M690 393C863 303 1012 412 1200 307V620H690Z" fill="#638a53" opacity=".92"/></g>
+  <path d="M85 494 C176 435 264 500 340 458 S529 369 629 427 S834 513 947 422 S1065 389 1117 332" fill="none" stroke="#fff9ec" stroke-width="19" stroke-linecap="round"/>
+  <path d="M85 494 C176 435 264 500 340 458 S529 369 629 427 S834 513 947 422 S1065 389 1117 332" fill="none" stroke="#a86437" stroke-width="3" stroke-dasharray="8 12" stroke-linecap="round"/>
+  <path d="M279 493c-27 9-47 4-62-13" fill="none" stroke="#a54532" stroke-width="7" stroke-linecap="round"/><path d="M215 480l10-18m-10 18 20 4" fill="none" stroke="#a54532" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <g fill="#fffaf0" stroke="#315d50" stroke-width="3"><rect x="74" y="70" width="322" height="500" rx="8" fill="none"/><rect x="439" y="70" width="322" height="500" rx="8" fill="none"/><rect x="804" y="70" width="322" height="500" rx="8" fill="none"/></g>
+  <g fill="#315d50" font-family="Georgia, serif" font-size="22" letter-spacing="2"><text x="74" y="625">ONE PAGE</text><text x="439" y="625">NEIGHBORS</text><text x="804" y="625">ONE SYSTEM</text></g>
+</svg>
