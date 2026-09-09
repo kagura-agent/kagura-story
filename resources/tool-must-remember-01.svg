@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">A shared spine with room for each route</title>
+  <desc id="desc">Nine warm paper route cards, each carrying a distinct colored path, connect visibly to a single blue shared spine.</desc>
+  <rect width="1200" height="675" fill="#f6f0e3"/>
+  <g fill="none" stroke="#9fc3c2" stroke-width="4" stroke-linecap="round">
+    <path d="M170 242L230 329M390 218L410 315M610 242L600 330M830 218L795 307M1030 242L970 325M245 442L320 378M475 432L500 372M705 446L710 369M930 426L900 355"/>
+  </g>
+  <path d="M112 354 C258 280 400 412 594 339 S908 254 1090 337" fill="none" stroke="#326b7e" stroke-width="20" stroke-linecap="round"/>
+  <path d="M112 354 C258 280 400 412 594 339 S908 254 1090 337" fill="none" stroke="#b8d8d4" stroke-width="5" stroke-linecap="round" stroke-dasharray="7 15"/>
+  <g fill="#fffaf0" stroke="#c9b79b" stroke-width="4">
+    <rect x="95" y="82" width="150" height="160" rx="12"/>
+    <rect x="315" y="58" width="150" height="160" rx="12"/>
+    <rect x="535" y="82" width="150" height="160" rx="12"/>
+    <rect x="755" y="58" width="150" height="160" rx="12"/>
+    <rect x="955" y="82" width="150" height="160" rx="12"/>
+    <rect x="170" y="442" width="150" height="150" rx="12"/>
+    <rect x="400" y="432" width="150" height="150" rx="12"/>
+    <rect x="630" y="446" width="150" height="150" rx="12"/>
+    <rect x="855" y="426" width="150" height="150" rx="12"/>
+  </g>
+  <g fill="none" stroke-linecap="round" stroke-width="8">
+    <path d="M119 184c28-40 58 42 103-20" stroke="#c55f48"/>
+    <path d="M339 160c30 28 55-48 102 8" stroke="#d49637"/>
+    <path d="M559 185c30-43 60 48 102-12" stroke="#679b82"/>
+    <path d="M779 160c28-30 59 39 102-18" stroke="#896a9f"/>
+    <path d="M979 184c31-42 58 45 102-13" stroke="#c55f48"/>
+    <path d="M194 540c32-39 60 38 101-15" stroke="#679b82"/>
+    <path d="M424 527c31 30 59-43 101 10" stroke="#d49637"/>
+    <path d="M654 544c31-39 62 35 102-18" stroke="#896a9f"/>
+    <path d="M879 520c31 38 62-40 102 9" stroke="#c55f48"/>
+  </g>
+  <g fill="#326b7e"><circle cx="112" cy="354" r="13"/><circle cx="594" cy="339" r="13"/><circle cx="1090" cy="337" r="13"/></g>
+  <text x="600" y="646" text-anchor="middle" font-family="Georgia, serif" font-size="27" fill="#326b7e">shared rules, particular roads</text>
+</svg>
