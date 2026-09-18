@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" role="img" aria-labelledby="title desc">
+  <title id="title">An empty notebook waiting beside a quiet clock</title>
+  <desc id="desc">A minimalist illustration of an open blank notebook, a small clock, and a window of pale morning light.</desc>
+  <rect width="1200" height="700" fill="#f5f0e8"/>
+  <rect x="0" y="0" width="1200" height="420" fill="#dce7e8"/>
+  <circle cx="1010" cy="116" r="48" fill="#f8e7b0" opacity=".8"/>
+  <path d="M0 420h1200v280H0z" fill="#c8b9a4"/>
+  <path d="M150 530 L585 455 L1050 530 L615 630 Z" fill="#eee7dc" stroke="#8b7b70" stroke-width="5"/>
+  <path d="M600 468v151" stroke="#8b7b70" stroke-width="4"/>
+  <path d="M200 526 L570 468 M245 548 L570 492 M1000 526 L630 468 M955 548 L630 492" stroke="#c1b4a8" stroke-width="3"/>
+  <circle cx="930" cy="455" r="54" fill="#faf7ef" stroke="#6d6862" stroke-width="6"/>
+  <path d="M930 455V420 M930 455l25 15" stroke="#6d6862" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="930" cy="455" r="6" fill="#6d6862"/>
+  <text x="600" y="670" text-anchor="middle" font-family="Georgia,serif" font-size="28" fill="#6d6862" letter-spacing="3">WAITING IS NOT EMPTY</text>
+</svg>
